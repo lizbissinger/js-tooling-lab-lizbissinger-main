@@ -15,17 +15,17 @@ var username;
 
 // hide gamescreen
 gameScreen.classList.add(`d-none`);
-resetGameButton.classList.add(`d-none`);
+resetGameButton.classList.add('d-none')
 
 // updateScoreTallyUI
-function updateScoreTallyUI(){
+function updateScoreTallyUI () {
   scoreParagraph.innerHTML = `${game.username}: ${game.score.user} v CPU: ${game.score.cpu}`;
 }
 
 // updateGameHistoryUI
-function updateGameHistoryUI(){
-      gameHistoryParagraph.innerHTML = ''; 
-    gameHistoryParagraph.innerHTML = game.gameHistoryLog; 
+function updateGameHistoryUI () {
+  gameHistoryParagraph.innerHTML = ''
+  gameHistoryParagraph.innerHTML = game.gameHistoryLog
 }
 
 // start-game-button EventListener
